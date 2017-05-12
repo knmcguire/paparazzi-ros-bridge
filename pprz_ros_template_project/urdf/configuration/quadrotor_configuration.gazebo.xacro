@@ -2,7 +2,9 @@
 
 <robot name="quadrotor" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:include filename="$(find pprz_ros_template_project)/urdf/configuration/quadrotor_configuration.urdf.xacro" /><!-- configuration URDF file -->
-    <xacro:include filename="$(find hector_quadrotor_gazebo)/urdf/quadrotor_plugins.gazebo.xacro" />
+    <xacro:macro name="quadrotor_plugins"><!-- FIX missing quadrotor_plugins macro -->
+    	<xacro:include filename="$(find hector_quadrotor_gazebo)/urdf/quadrotor_plugins.gazebo.xacro" />
+    </xacro:macro>
     <xacro:quadrotor_plugins />
 </robot>
 

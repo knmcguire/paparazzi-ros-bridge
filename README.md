@@ -8,17 +8,17 @@ git clone XXX
 ```
 
 - Build
+First source hector workspace if req'd!
+```
+source ~/hector_ws/devel/setup.bash
+```
+Then build this workspace:
 ```
 cd ~/catkin_ws
 catkin_make
 ```
-If required, add the hector source to this workspace:
-```
-cd ~/catkin_ws/src
-ln -s /path/to/hector/src hector_src
-```
 
-- Source workspace
+- Source this workspace
 ```
 source devel/setup.bash
 ```
